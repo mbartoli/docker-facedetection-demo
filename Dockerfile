@@ -20,7 +20,8 @@ RUN apt-get install -y \
     python-pip \
     wget \
     zip \
-    vim
+    vim \
+    apache2
 RUN pip2 install numpy scipy pandas
 RUN pip2 install scikit-learn scikit-image
 

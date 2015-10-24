@@ -66,3 +66,8 @@ RUN git clone https://github.com/mbartoli/openface
 WORKDIR /home/openface/demos/web
 RUN sh install-deps.sh
 RUN pip install -r requirements.txt
+
+WORKDIR /home/openface/models
+RUN sh get-models.sh
+
+WORKDIR /home/openface/demos/web

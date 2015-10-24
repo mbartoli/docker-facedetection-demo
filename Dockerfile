@@ -19,7 +19,8 @@ RUN apt-get install -y \
     python-dev \
     python-pip \
     wget \
-    zip
+    zip \
+    vim
 RUN pip2 install numpy scipy pandas
 RUN pip2 install scikit-learn scikit-image
 
@@ -71,3 +72,4 @@ WORKDIR /home/openface/models
 RUN sh get-models.sh
 
 WORKDIR /home/openface/demos/web
+
